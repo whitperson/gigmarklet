@@ -1,4 +1,21 @@
 Gigmarklet::Application.routes.draw do
+
+  resources :users
+  match '/users/:id/events' => 'users#events', :as => 'users_events'
+
+  resources :events
+
+  post '/add_url' => 'home#add_url'
+
+  get '/register' => 'register#new'
+  post '/register' => 'register#create'
+
+  get '/login' => 'session#new'
+  post '/login' => 'session#create'
+  delete '/logout' => 'session#destroy'
+
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +65,7 @@ Gigmarklet::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+
 
   # See how all your routes lay out with "rake routes"
 

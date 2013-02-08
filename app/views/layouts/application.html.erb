@@ -8,7 +8,22 @@
 </head>
 <body>
 
+  <div id="container">
+
+    <header>
+      <h1>Gigmarklet</h1>
+      <h1> \m/ </h1>
+    </header>
+
+    <nav>
+      <ul class="nav">
+        <li class="nav"><%= link_to "HOME", root_path %> <%= display_links %></li>
+      </ul>
+    </nav>
+
 <%= yield %>
+
+  </div> <!-- ends container -->
 
 </body>
 </html>
