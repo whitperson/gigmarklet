@@ -13,9 +13,9 @@ class UsersController < ApplicationController
     end
   end
 
-  # def events
-  #   @events = Events.where(:user_id => params[:id])
-  # end
+  def events
+    @events = @auth.events
+  end
 
   def edit
     if params[:id]

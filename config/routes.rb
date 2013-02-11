@@ -1,11 +1,12 @@
 Gigmarklet::Application.routes.draw do
 
   resources :users
-  match '/users/:id/events' => 'users#events', :as => 'users_events'
+  get '/users/:id/events' => 'users#events'
 
   resources :events
 
   post '/add_url' => 'home#add_url'
+  get '/gigmarklet' => 'events#create'
 
   get '/register' => 'register#new'
   post '/register' => 'register#create'

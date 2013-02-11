@@ -1,25 +1,59 @@
 
-<div id="main">
-  <h3>Gigmarklet is a drop-dead simple way to track shows and events you want to attend.</h3>
-  <p>Login or Register to save events with a single click as you discover them anywhere on the web.</p>
-  <p>Drag this button to your bookmarks toolbar and use it when you find an event you want to save.</p>
+<div id="hero" class="hero-unit">
+      <h1 class="intro">gigmarklet</h1>
+      <h1 class="intro">\m/ </h1>
+          <h4>gigmarklet is a simple way to track shows and events you want to attend.</h4>
+          <p>register (or login) to save events with a single click. drag the "gigmarklet" button below to your bookmarks toolbar and use it when you find an event you want to save.</p>
+        <p>
+        <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet \m/</a>
+        </p>
 
-    <p>Gigmarklet works with the following sites:</p>
-        <ul>
-          <li>Ticketmaster.com</li>
-          <li>LiveNation.com</li>
-          <li>AXS.com</li>
-          <li>TicketFly.com</li>
-          <li>Eventbrite.com</li>
-          <li>Facebook Events</li>
-        </ul>
+      <div id="add_url"> or, you can add an event manually with URL: <%= render :partial => 'shared/add_url' %>
+      </div> <!-- end add_url -->
+</div> <!-- ends hero unit -->
 
-  <div id="add_url">
-    <h4>Add a url for an item manually</h4>
+      <div class="row" id="features">
 
-     <%= render :partial => 'shared/add_url' %>
+        <div class="span4 feature">
+          <h3>works w/ popular event sites, including:</h3>
+          <p>
+            <ul>
+              <li>Ticketmaster</li>
+              <li>Ticketweb</li>
+              <li>Live Nation</li>
+              <li>TicketFly</li>
+              <li>Eventbrite</li>
+              <li>Seatgeek</li>
+              <li>AXS</li>
+            </ul>
+         </p>
+        </div> <!-- end span4 -->
 
-     <a id="bookmarklet" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">Gigmarklet</a>
+        <div class="span4 feature">
+          <h3>support coming soon for other sites:</h3>
+          <p>
+            <ul>
+              <li>Stubhub</li>
+              <li>Tickets.com</li>
+              <li>Facebook Events</li>
+              <li>Crowdsurge</li>
+              <li>Frontgate</li>
+            </ul>
+          </p>
+        </div> <!-- end span4 -->
 
-    </div> <!-- end add_url -->
-</div><!-- end main -->
+        <div class="span4 feature">
+          <h3> gigmarklet <br> bennies:</h3>
+          <p>
+            <ul>
+              <li>a super simple way to save and track events you'd like to attend</li>
+              <li>save events with a single click as you discover them on the web</li>
+            </ul>
+          </p>
+        </div><!-- end span4 -->
+
+      </div> <!-- end features section -->
+
+      <hr>
+
+
