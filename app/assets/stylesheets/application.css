@@ -20,9 +20,13 @@ a.visited
 
 }
 
+a:active
+{
+  color: #EB5A00;
+}
+
 a:hover
 {
-  font-weight: bold;
   color: #EB5A00;
 }
 
@@ -49,11 +53,6 @@ input.btn
 {
   color: #EB5A00;
   font-family: 'Nova Square', cursive;
-}
-
-.container-fluid
-{
-  height: 100%;
 }
 
 footer
@@ -136,7 +135,16 @@ MY EVENTS PAGE SYLES
 {
   margin: 5%;
   margin-left: 1%;
+
 }
+
+#myEvents h2
+{
+  border-bottom: 1px solid #EB5A00;
+    margin-bottom: 3%;
+  padding-bottom: 2%;
+}
+
 
 .event ul
 {

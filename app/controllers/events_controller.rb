@@ -20,7 +20,6 @@ skip_before_filter :verify_authenticity_token, :only => [:create]
       @event.user_id = @auth.id
       begin
         @event.parse(@url)
-        binding.pry
       rescue
         @event.link = @url
         @event.save
