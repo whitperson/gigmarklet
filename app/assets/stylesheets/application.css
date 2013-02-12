@@ -103,6 +103,12 @@ HOMEPAGE SYLES
   font-size: 1.25em;
 }
 
+.feature li a
+{
+  color: #EB5A00;
+}
+
+
 a#bookmarklet
 {
   color: #EB5A00;
