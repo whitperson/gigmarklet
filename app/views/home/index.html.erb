@@ -8,6 +8,10 @@
         <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet \m/</a>
         </p>
 
+        <p>
+        <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://gigmarklet.herokuapp.com/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet live</a>
+        </p>
+
       <div id="add_url"> or, you can add an event manually via URL: <%= render :partial => 'shared/add_url' %>
       </div> <!-- end add_url -->
 </div> <!-- ends hero unit -->
