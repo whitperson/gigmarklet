@@ -18,6 +18,7 @@
 
 class Event < ActiveRecord::Base
   belongs_to :user
+  default_scope order('event_date DESC')
   require 'nokogiri'
   require 'open-uri'
 
@@ -59,7 +60,7 @@ class Event < ActiveRecord::Base
     self.venue = doc.css("span#artist_venue_name").children().text
     self.location = doc.css("span#artist_location").children().text
     self.event_date = doc.css("span#artist_event_date").children().text
-    self.name = "#{self.artist} @ #{self.venue}, #{self.event_date}"
+    self.name = "#{self.artist} @ #{self.venue} #{self.event_date}"
     self.save
   end
 

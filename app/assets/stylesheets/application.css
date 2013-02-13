@@ -15,11 +15,6 @@ a:link
  color: #EB5A00;
 }
 
-a.visited
-{
-
-}
-
 a:active
 {
   color: #EB5A00;
@@ -29,7 +24,6 @@ a:hover
 {
   color: #EB5A00;
 }
-
 
 .nav li
 {
@@ -58,6 +52,7 @@ input.btn
 footer
 {
   margin-bottom: 1%;
+  margin-left: 1%;
 }
 
 /*------------
@@ -75,7 +70,6 @@ HOMEPAGE SYLES
 {
   background-color: #EDEDED;
   font-family: 'Nova Square', cursive;
-
 }
 
 #hero
@@ -89,30 +83,6 @@ HOMEPAGE SYLES
   background-color: #ADADAD;
   border: 2px solid #474747;
   border-radius: 8px;
-}
-
-#features
-{
-  font-family: 'Nova Square', cursive;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.feature li
-{
-  font-size: 1.25em;
-}
-
-.feature li a
-{
-  color: #EB5A00;
-}
-
-
-a#bookmarklet
-{
-  color: #EB5A00;
-  font-family: 'Nova Square', cursive;
 }
 
 #add_url form
@@ -132,9 +102,37 @@ a#bookmarklet
    font-family: 'Nova Square', cursive;
 }
 
+#features
+{
+  font-family: 'Nova Square', cursive;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
-/*------------------
-MY EVENTS PAGE SYLES
+.feature
+{
+  font-family: 'Nova Square', cursive;
+  float:none;
+}
+
+.feature li
+{
+  font-size: 1.25em;
+}
+
+.feature li a
+{
+  color: #EB5A00;
+}
+
+a#bookmarklet
+{
+  color: #EB5A00;
+  font-family: 'Nova Square', cursive;
+}
+
+/*-----------------
+EVENTS PAGE SYLES
 ------------------*/
 
 #myEvents
@@ -147,7 +145,7 @@ MY EVENTS PAGE SYLES
 #myEvents h2
 {
   border-bottom: 1px solid #EB5A00;
-    margin-bottom: 3%;
+  margin-bottom: 3%;
   padding-bottom: 2%;
 }
 
@@ -166,5 +164,21 @@ MY EVENTS PAGE SYLES
 
 .event li:last-child {
   margin-bottom: 1%;
+}
+
+.event li a
+{
+ color: #EB5A00;
+}
+
+.event li a:active
+
+{
+  color: #EB5A00;
+}
+
+.event li a:hover
+{
+  color: #EB5A00;
 }
 
