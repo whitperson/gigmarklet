@@ -5,7 +5,7 @@
 
     <div class="event">
 
-      <% @events.sort {|a,b| b.event_date <=> a.event_date }.each do |event| %>
+      <% @events.each do |event| %>
       <ul>
             <li> <h4> <%= link_to "#{event.name if event.name}", event.tickets, :target => "_blank" %> </h4> </li>
             <li> <h4> headliner: <%= event.artist %></h4>
