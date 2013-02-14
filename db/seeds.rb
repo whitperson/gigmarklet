@@ -11,6 +11,6 @@ u2 = User.create(:name => "whit", :password => "1", :password_confirmation => "1
 u3 = User.create(:name => "dude", :password => "1", :password_confirmation => "1", :email => "whitperson@livemusicblog.com")
 
 # USERS EVENTS
-u1.songs = [e1, e2, e3]
+u1.events = [e1, e2, e3]
 
 
