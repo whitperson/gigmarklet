@@ -2,15 +2,15 @@
 <div id="hero" class="hero-unit">
       <h1 class="intro">gigmarklet</h1>
       <h1 class="intro">\m/ </h1>
-          <h4>gigmarklet is a simple way to track shows and events you want to attend.</h4>
-          <p>register (or login) to save events with a single click. drag the "gigmarklet" button below to your bookmarks toolbar and use it when you find an event you want to save.</p>
-<!--         <p>
+          <h4>gigmarklet is a simple way to track and save concerts and events you'd like to attend.</h4>
+          <p>register (or login) to save events with a single click. drag the "gigmarklet" button below to your bookmarks toolbar and click it when you find an event you want to save.</p>
+ <p>
         <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet \m/</a>
-        </p> --> <!-- localhost version of bookmarklet -->
+        </p> <!-- localhost version of bookmarklet -->
 
-        <p>
-        <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://gigmarklet.herokuapp.com/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet \m/</a>
-        </p> <!-- production version of bookmarklet-->
+       <p>
+        <a id="bookmarklet" class="btn btn-inverse btn-large" target="_blank" href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://gigmarklet.herokuapp.com/gigmarklet',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;">gigmarklet</a>
+        </p> <!-- production version of bookmarklet -->
 
       <div id="add_url"> or, you can add an event manually via URL: <%= render :partial => 'shared/add_url' %>
       </div> <!-- end add_url -->

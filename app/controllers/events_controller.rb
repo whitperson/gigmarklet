@@ -18,16 +18,16 @@ skip_before_filter :verify_authenticity_token, :only => [:create]
     if @auth
       puts "this is an auth user => #{@auth}"
       @event.user_id = @auth.id
-      begin
+      # begin
         @event.parse(@url)
-      rescue
+      # rescue
         @event.link = @url
         @event.save
-      end
+      # end
       msg = "Event saved!"
     else
       puts "not logged index" # heroku logs debug
-      msg = "Please remember to login"
+      msg = "Please login or register an account with Gigmarklet to save events"
     end
     #render :nothing => true
     # render :json => { :result => msg }
